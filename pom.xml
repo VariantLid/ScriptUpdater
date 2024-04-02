@@ -95,9 +95,18 @@
         <directory>src/main/resources</directory>
         <filtering>false</filtering>
         <excludes>
-          <exclude>*.properties;*.ini</exclude>
+          <exclude>*.properties</exclude>
         </excludes>
       </resource>
+
+      <resource>
+        <directory>src/main</directory>
+        <filtering>false</filtering>
+        <excludes>
+          <exclude>*.ini</exclude>
+        </excludes>
+      </resource>
+
     </resources>
 
   </build>

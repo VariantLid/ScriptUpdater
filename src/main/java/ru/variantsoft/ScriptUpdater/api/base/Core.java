@@ -62,16 +62,16 @@ public class Core {
         ReadProps.CurrentDBName = ADBName;
 
         try {
-            Core.db.shutdownDatabase(SHUTDOWN_FORCE, 1);// Базу в даун
-            logger.info("Database SHUTDOWN_FORCE");
+            //Core.db.shutdownDatabase(SHUTDOWN_FORCE, 1);// Базу в даун
+            //logger.info("Database SHUTDOWN_FORCE");
 
             if (DoConnect())  // Открываем соединение с базой
                 DoUpdate();    // Приступаем к операции обновления
 
 
         } finally {
-            Core.db.bringDatabaseOnline(); // DEBUG             // Базу на бочку
-            logger.info("Database ONLINE");
+            //Core.db.bringDatabaseOnline(); // DEBUG             // Базу на бочку
+            //logger.info("Database ONLINE");
             closeAccessToFB(); // Закрываем соединение с базой
         }
     }

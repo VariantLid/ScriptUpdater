@@ -53,7 +53,7 @@ public class ReadProps {
                 ini.load(new FileInputStream(classpathFile));
                 String sDelim = ini.getProperty(Core.cnst.getString("cnstDelimiter"));
                 String sIni = ini.getProperty(Core.cnst.getString("cnstDatabases"));
-                String sUpdFile = ini.getProperty(Core.cnst.getString("cnstUpDateFile"));
+                String sUpdFile = ini.getProperty(Core.cnst.getString("cnstUpDateFiles"));
                 UserName = ini.getProperty(Core.cnst.getString("cnstUserName"));
                 Password = ini.getProperty(Core.cnst.getString("cnstPassword"));
                 RoleName = ini.getProperty(Core.cnst.getString("cnstRoleName"));
